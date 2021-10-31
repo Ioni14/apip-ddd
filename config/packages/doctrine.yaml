@@ -8,7 +8,7 @@ doctrine:
         mappings:
             Panda_Model:
                 is_bundle: false
-                type: annotation
+                type: attribute
                 dir: '%kernel.project_dir%/src/Domain/Panda/Model'
                 prefix: 'Domain\Panda\Model'
                 alias: Panda

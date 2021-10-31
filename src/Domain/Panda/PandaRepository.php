@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Domain\Panda;
+namespace Domain\Panda;
 
-use App\Domain\Panda\Model\Panda;
-use App\Domain\Panda\Model\PandaId;
+use Domain\Panda\Model\Panda;
+use Domain\Panda\Model\PandaId;
 
 interface PandaRepository
 {

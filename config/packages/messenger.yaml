@@ -1,0 +1,6 @@
+framework:
+    messenger:
+        transports:
+            sync: 'sync://'
+        routing:
+            'Application\Panda\Command\FeedPanda': sync

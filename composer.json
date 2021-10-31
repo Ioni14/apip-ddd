@@ -21,6 +21,7 @@
         "symfony/expression-language": "5.3.*",
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "5.3.*",
+        "symfony/messenger": "5.3.*",
         "symfony/property-access": "5.3.*",
         "symfony/property-info": "5.3.*",
         "symfony/proxy-manager-bridge": "5.3.*",
@@ -35,7 +36,11 @@
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "5.3.*",
         "symfony/css-selector": "5.3.*",
-        "symfony/phpunit-bridge": "^5.3"
+        "symfony/debug-bundle": "5.3.*",
+        "symfony/monolog-bundle": "^3.0",
+        "symfony/phpunit-bridge": "^5.3",
+        "symfony/stopwatch": "5.3.*",
+        "symfony/web-profiler-bundle": "5.3.*"
     },
     "config": {
         "optimize-autoloader": true,
@@ -46,7 +51,9 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "Domain\\": "src/Domain",
+            "Application\\": "src/Application",
+            "Infrastructure\\": "src/Infrastructure"
         }
     },
     "autoload-dev": {

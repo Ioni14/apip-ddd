@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Infrastructure\Panda\Repository;
+namespace Infrastructure\Panda\Repository;
 
-use App\Domain\Panda\Model\Panda;
-use App\Domain\Panda\Model\PandaId;
-use App\Domain\Panda\PandaRepository;
+use Domain\Panda\PandaRepository;
+use Domain\Panda\Model\Panda;
+use Domain\Panda\Model\PandaId;
 
 class PandaRepositoryUsingMemory implements PandaRepository
 {

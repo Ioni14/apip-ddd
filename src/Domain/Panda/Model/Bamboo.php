@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Panda\Model;
+namespace Domain\Panda\Model;
 
 class Bamboo
 {
