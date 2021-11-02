@@ -3,7 +3,7 @@
 namespace App\Tests\Acceptance;
 
 use Application\Panda\Command\FeedPanda;
-use Application\Panda\FeedPandaHandler;
+use Application\Panda\Handler\FeedPandaHandler;
 use Domain\Panda\Model\Panda;
 use Domain\Panda\Model\PandaId;
 use Infrastructure\Panda\Repository\PandaRepositoryUsingMemory;

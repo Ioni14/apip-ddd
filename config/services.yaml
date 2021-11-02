@@ -14,3 +14,7 @@ services:
         resource: '../src/Infrastructure'
 
     Domain\Panda\PandaRepository: '@Infrastructure\Panda\Repository\PandaRepositoryUsingDoctrine'
+
+    Infrastructure\Panda\ApiPlatform\IdentifierDenormalizer\PandaIdentifierDenormalizer:
+        tags:
+            - { name: api_platform.identifier.denormalizer }

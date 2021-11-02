@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Panda;
+namespace Application\Panda\Handler;
 
 use Application\Panda\Command\FeedPanda;
 use Application\Panda\Exception\PandaNotFoundException;
@@ -18,9 +18,10 @@ class FeedPandaHandler implements MessageHandlerInterface
 
     public function __invoke(FeedPanda $command): void
     {
-        $panda = $this->pandaRepository->get(new PandaId($command->pandaId));
+        $id = new PandaId($command->pandaId);
+        $panda = $this->pandaRepository->get($id);
         if (!$panda) {
-            throw new PandaNotFoundException('Panda does not exist.');
+            throw PandaNotFoundException::fromId($id);
         }
         $panda->feed(new Bamboo($command->bambooLength));
         $this->pandaRepository->save($panda);
